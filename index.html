@@ -17,7 +17,7 @@
 
 h1 {
   margin-bottom: 15px;
-  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 
 }
 p {
@@ -35,7 +35,7 @@ section{
   clear:both;
 }
 #p1 {
-  background-color: bisque;
+  background-color: bisque;  
   float: right;
 }
 
@@ -45,11 +45,12 @@ float: right;
 
 #p3{background-color: chocolate;
 float: right;
+position: relative;
 }
 
 #box{
   background-color: darkgray;
-  margin: 20px;
+  margin: 10px;
   padding: 5px;
   border: 4px solid black;
 }
@@ -57,16 +58,11 @@ float: right;
 .row {
   width: 100%;
 }
-.header{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-  }
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
-    border: 1px solid green;
-  }
+    }
   .col-md-1 {
     width: 8.33%;
   }
@@ -106,9 +102,8 @@ float: right;
 /********** small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
   .col-sd-1, .col-sd-2, .col-sd-3, .col-sd-4, .col-sd-5, .col-sd-6, .col-sd-7, .col-sd-8, .col-sd-9, .col-sd-10, .col-sd-11, .col-sd-12 {
-    float: left;
-    border: 1px solid green;
-  }
+      float: left;
+      }
   .col-sd-1 {
     width: 8.33%;
   }
@@ -148,8 +143,7 @@ float: right;
   ********** phone devices only **********/
 @media (max-width: 767px) {
   .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
-    float: left;
-    border: 1px solid green;
+  float: left;
   }
   .col-xs-1 {
     width: 8.33%;
@@ -193,23 +187,24 @@ float: right;
 
 <body>
 
-    <h1>Restaurant Menu</h1>
+  <h1>Our Menu</h1>
+
     <div class="row">
-    <div id="box">
-  
-      <div class="col-md-3 col-xs-6">
+      <div class="col-md-4 col-sd4 col-xs-6">
+      <div id="box">
       <p id="p1">Pizza</p>
       <section>delicious homemade dough, topped with slowly simmered tomato sauce and topped with your favorite veges and meats</section>
       </div>
     </div>
-    <div id="box">
-      <div class="col-md-3 col-xs-6">
+      <div class="col-md-4 col-sm-4 col-xs-6">
+      <div id="box">
       <p id="p2">Pasta</p>
       <section>homemade wheat noodles in all shapes and sizes. we also offer glutenfree and wholegrain options.</section>
       </div>
     </div>
-    <div id="box">
-      <div class="col-md-3 col-xs-6"><p id="p3">Dolci </p>
+      <div class="col-md-4 col-sm-4 col-xs-6">
+      <div id="box">
+      <p id="p3">Dolci</p>
       <section>Happiness served in cups, be it homemade Tiramisu, milky Panna Cotta with raspberry sauce.</section>
       </div>
     </div>
