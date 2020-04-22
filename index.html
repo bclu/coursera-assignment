@@ -58,11 +58,56 @@ bottom: 13px;
   background-color: darkgray;
   margin: 5px;
   padding: 5px;
-  border: 3px solid black;  
+  border: 1px solid black;  
 }
 
 .row {
   width: 100%;
+}
+@media (min-width: 1200px)
+{
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 
+  .col-lg-1{
+    float: left;
+  }
+    .col-lg-1 {
+    width: 8.33%;
+    float: left;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+    float: left;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
 }
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) 
@@ -172,17 +217,17 @@ bottom: 13px;
   <h1>Our Menu</h1>
 
     <div class="row">
-      <div id="box" class="col-md-3 col-sm-5" >
+      <div id="box" class="col-lg-3 col-md-3 col-sm-5" >
       <p id="p1">Pizza</p>
       <section>Delicious homemade dough, topped with slowly simmered tomato sauce and topped with your favorite vegetables and meats. The tomato sauce is made cooked with fresh garlic, herbs and onions.</section>
       </div>
     </div>
-      <div id="box" class="col-md-3 col-sm-5">
+      <div id="box" class="col-lg-3 col-md-3 col-sm-5">
       <p id="p2">Pasta</p>
       <section>Homemade wheat noodles in all shapes and sizes. We also offer glutenfree and wholegrain options. Our supplier come from our region. Our pasta chefs have years of experience, you'll taste the quality.</section>
       </div>
     </div>
-      <div id="box" class="col-md-3 col-sm-11">
+      <div id="box" class="col-lg-3 col-md-3 col-sm-11">
       <p id="p3">Dolci</p>
       <section>Happiness served in cups, be it homemade Tiramisu, milky Panna Cotta with raspberry sauce. Our dairy supplier is based in the region and we visit him regularly to ensure the highest quality.</section>
       </div>
